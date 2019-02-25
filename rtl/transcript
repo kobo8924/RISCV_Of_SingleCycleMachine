@@ -1,0 +1,8 @@
+# vsim ScmOfRISCV_tb -c -lib RISCV_Of_SingleCycleMachine -do "run -all;quit" 
+# Start time: 08:13:17 on Feb 23,2019
+# ** Error: (vsim-3170) Could not find 'ScmOfRISCV_tb'.
+#         Searched libraries:
+#             /home/k0b0/mydir/RISCV_Of_SingleCycleMachine/rtl/work
+# Error loading design
+# End time: 08:13:17 on Feb 23,2019, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0

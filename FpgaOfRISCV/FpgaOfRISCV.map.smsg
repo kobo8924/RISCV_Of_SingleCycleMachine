@@ -1,0 +1,1 @@
+Info (10281): Verilog HDL Declaration information at InstructionMemory.sv(9): object "INSTRUCTION" differs only in case from object "Instruction" in the same scope File: /home/kobo/circuit/RISCV_Of_SingleCycleMachine/rtl/InstructionMemory.sv Line: 9
