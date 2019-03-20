@@ -93,7 +93,7 @@ endtask
 task SHOW_ALU_SIGS;
     SELECT_OP();
     $display("=== ALU Sig s=============================================================");
-    $display("Operation : %s A:%2d B:%2d ALUout:%3d",  alu_op, RISCV_0.Readdata1, RISCV_0.RegOrConst, RISCV_0.ALUOut);
+    $display("Operation : %s A:%2d B:%2d ALUout:%3d ZeroFlg:%1d",  alu_op, RISCV_0.Readdata1, RISCV_0.RegOrConst, RISCV_0.ALUOut, RISCV_0.Zero_flg);
 endtask
 
 task SHOW_DMEM_SIGS;

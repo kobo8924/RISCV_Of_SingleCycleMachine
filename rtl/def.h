@@ -41,11 +41,6 @@
 `define ALU_SUB  `ALU_SEL_W'b000110
 `define ALU_XOR  `ALU_SEL_W'b000111
 
-//`define ALU_ADDI `ALU_SEL_W'b001001
-//`define ALU_ANDI `ALU_SEL_W'b001010
-//`define ALU_ORI  `ALU_SEL_W'b001011
-//`define ALU_XORI `ALU_SEL_W'b001100
-
 //`define ALU_CMP `ALU_SEL_W'b000111
 //`define ALU_NOR `ALU_SEL_W'b001010
 
