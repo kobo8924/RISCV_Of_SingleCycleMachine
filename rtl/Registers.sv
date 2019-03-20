@@ -4,10 +4,15 @@
 //
 // Ports:
 // ================================================
-// Name          I/O   SIZE   props
+// Name            I/O   SIZE   props
 // ================================================
-//
-//
+// Readregister1     I      5  
+// Readregister2     I      5  
+// Writeregister     I      5
+// RegWrite          I      1   WriteEnable
+// Writedata         I     64
+// REaddata1         O     64
+// REaddata2         O     64
 // ================================================
 // 
 //
