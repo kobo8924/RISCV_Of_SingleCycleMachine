@@ -36,19 +36,22 @@ ScmOfRISCV RISCV_0(.clk   (clk),
 // Clock Genereate.
 always #(CYCLE/2) clk = ~clk;
 
+/*
+always @(posedge clk)
+    DISPLAY_SIGNAL(); 
+*/
 
 initial
 begin
     $display("=== Start Of Simulation. ===");
     SYSTEM_RESET();
     
-    while(cnt < 10)
+    while(cnt < 16)
     begin
 	DISPLAY_SIGNAL(); #(CYCLE);
 	cnt = cnt + 1;
     end
 
-    
 
     $display("=== End Of Simulation. ===");
     $finish;

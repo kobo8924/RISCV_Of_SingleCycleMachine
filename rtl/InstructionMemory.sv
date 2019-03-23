@@ -22,7 +22,7 @@ module InstructionMemory (input  logic [`IMEM_ADDR_W-1:0] Readaddress,
 			  output logic [`IMEM_W-1:0]      Instruction);
 
 
-logic [`IMEM_W-1:0] imem [0:9];
+logic [`IMEM_W-1:0] imem [0:15];
 
 initial 
 begin

@@ -68,9 +68,6 @@ assign rd     = instruction[11:7];
 assign rs1    = instruction[19:15];
 assign rs2    = instruction[24:20];
 
-//assign imm    = instruction[31:20];
-
-//assign Immgen = {32'd0, imm};
 
 // ImmGen
 // Select immedeate by OPCODE.
