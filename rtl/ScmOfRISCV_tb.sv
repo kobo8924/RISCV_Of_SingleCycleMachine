@@ -112,6 +112,12 @@ task SELECT_OP;
     // instruction[14:12] : funct3
     // instruction[6:0]   : opcode
     casex({RISCV_0.instruction[31:20], RISCV_0.instruction[14:12], RISCV_0.instruction[6:0]})
+        22'bxxxxxxxxxxxx_000_1100011  : alu_op = "BEQ";
+        22'bxxxxxxxxxxxx_001_1100011  : alu_op = "BNE";
+        22'bxxxxxxxxxxxx_100_1100011  : alu_op = "BLT";
+        22'bxxxxxxxxxxxx_101_1100011  : alu_op = "BGE";
+        22'bxxxxxxxxxxxx_110_1100011  : alu_op = "BLTU";
+        22'bxxxxxxxxxxxx_111_1100011  : alu_op = "BGEU";
 	22'bxxxxxxxxxxxx_000_0000011  : alu_op = "LB";
 	22'bxxxxxxxxxxxx_001_0000011  : alu_op = "LH";
 	22'bxxxxxxxxxxxx_010_0000011  : alu_op = "LW";

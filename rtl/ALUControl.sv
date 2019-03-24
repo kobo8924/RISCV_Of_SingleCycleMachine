@@ -34,7 +34,8 @@ always_comb
 begin
      casex ({ALUOp,Inst})
 	 6'b00xxxx : ALUCtl = `ALU_ADD; // add (ld, sd)
-	 6'b01xxxx : ALUCtl = `ALU_SUB; // sub (beq)
+	 6'b01x000 : ALUCtl = `ALU_SUB; // sub (beq)
+	 6'b01x001 : ALUCtl = `ALU_BNE; // bne
 	 6'b1x0000 : ALUCtl = `ALU_ADD; // add (add)
 	 6'b1x1000 : ALUCtl = `ALU_SUB; // sub (sub)
 	 6'b1x0111 : ALUCtl = `ALU_AND; // and 
