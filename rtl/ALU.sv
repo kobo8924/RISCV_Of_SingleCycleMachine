@@ -5,13 +5,14 @@
 //
 // 
 // Ports:
+// =========================================================
 // Name          I/O   SIZE   props
 // ALUctl          I      6 
 // A               I     64
 // B               I     64
 // ALU_Out         O     64
 // Zero            O      1
-//
+// =========================================================
 //
 
 
@@ -36,6 +37,12 @@ begin
 	`ALU_XOR  : ALUOut <= A ^ B;
 	`ALU_ADD  : ALUOut <= A + B;
 	`ALU_SUB  : ALUOut <= A - B;
+	`ALU_BNE  : ALUOut <= !(A != B);
+	`ALU_BLT  : ALUOut <= !(A < B);
+	`ALU_BGE  : ALUOut <= !(A >= B);
+
+	// `ALU_BLTU  : ALUOut <= !(A < B);
+	// `ALU_BGEU  : ALUOut <= !(A >= B);
 	//`ALU_CMP : ALUOut <= (A < B)? 1:0;
 	//`ALU_NOR : ALUOut <= ~(A | B);
 	default  : ALUOut <= 0;
