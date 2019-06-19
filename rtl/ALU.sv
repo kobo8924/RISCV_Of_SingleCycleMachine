@@ -15,8 +15,10 @@
 // =========================================================
 //
 
-
-`include "def.h"
+`ifndef DEF_HEADDER
+    `include "def.h"
+    `define DEF_HEADDER
+`endif
 
 module ALU (input  logic [`ALU_SEL_W-1:0] ALUctl, 
             input  logic [`DATA_W-1:0]    A, B, 

@@ -12,8 +12,8 @@
 //
 //
 
-`define IMEM_FILE_PATH "$HOME/mydir/RISCV_Of_SingleCycleMachine/rtl/imem.dat"
-`define DMEM_FILE_PATH "$HOME/mydir/RISCV_Of_SingleCycleMachine/rtl/dmem.dat"
+`define IMEM_FILE_PATH "/home/k0b0/fpga/ScmOfRISCV/rtl/imem.dat"
+`define DMEM_FILE_PATH "/home/k0b0/fpga/ScmOfRISCV/rtl/dmem.dat"
 
 
 `define INST_W 32

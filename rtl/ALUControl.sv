@@ -23,8 +23,12 @@
 *
 **/
 
+`ifndef DEF_HEADDER
+    `include "def.h"
+    `define DEF_HEADDER
+`endif
 
-`include "def.h"
+
 
 module ALUControl(input  logic [3:0]            Inst,  // from {Instruction{30,14:12}}
                   input  logic [1:0]            ALUOp, // from Control

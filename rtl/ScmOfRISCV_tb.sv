@@ -16,7 +16,13 @@
 
 
 `timescale 1ps/1ps
-`include "def.h"
+
+
+`ifndef DEF_HEADDER
+    `include "def.h"
+    `define DEF_HEADDER
+`endif
+
 
 module ScmOfRISCV_tb;
 

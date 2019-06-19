@@ -18,9 +18,10 @@
 // 
 //
 
-
-
-`include "def.h"
+`ifndef DEF_HEADDER
+    `include "def.h"
+    `define DEF_HEADDER
+`endif
 
 module DataMemory (input                        clk,
 	           input                        MemWrite,

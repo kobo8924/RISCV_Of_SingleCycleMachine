@@ -16,8 +16,11 @@
 // 
 //
 
+`ifndef DEF_HEADDER
+    `include "def.h"
+    `define DEF_HEADDER
+`endif
 
-`include "def.h"
 
 module ImmGen (input  logic [`INST_W-1:0]   Inst, 
                input  logic [`OPCODE_W-1:0] Opcode, // from Control

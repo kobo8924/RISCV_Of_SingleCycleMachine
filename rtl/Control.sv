@@ -20,9 +20,10 @@
 // 
 //
 
-
-
-`include "def.h"
+`ifndef DEF_HEADDER
+    `include "def.h"
+    `define DEF_HEADDER
+`endif
 
 module Control (input  logic [`OPCODE_W-1:0] Instruction_opcode,
 	        output logic                 ALUSrc,

@@ -17,8 +17,12 @@
 // 
 //
 
+`ifndef DEF_HEADDER
+    `include "def.h"
+    `define DEF_HEADDER
+`endif
 
-`include "def.h"
+
 
 module Registers (input                clk,
                   input  [`REG_W-1:0]  Readregister1, // Read Register Address1

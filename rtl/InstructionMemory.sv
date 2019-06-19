@@ -16,7 +16,11 @@
 //
 
 
-`include "def.h"
+`ifndef DEF_HEADDER
+    `include "def.h"
+    `define DEF_HEADDER
+`endif
+
 
 module InstructionMemory (input  logic [`IMEM_ADDR_W-1:0] Readaddress,
 			  output logic [`IMEM_W-1:0]      Instruction);
