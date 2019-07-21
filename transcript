@@ -1,0 +1,240 @@
+# vsim ScmOfRISCV_tb -c -lib RISCV_Of_SingleCycleMachine -do "run -all;quit" 
+# Start time: 15:30:21 on Jul 20,2019
+# Loading sv_std.std
+# Loading RISCV_Of_SingleCycleMachine.ScmOfRISCV_tb_sv_unit
+# Loading RISCV_Of_SingleCycleMachine.ScmOfRISCV_tb
+# Loading RISCV_Of_SingleCycleMachine.ScmOfRISCV_sv_unit
+# Loading RISCV_Of_SingleCycleMachine.ScmOfRISCV
+# Loading RISCV_Of_SingleCycleMachine.ImmGen_sv_unit
+# Loading RISCV_Of_SingleCycleMachine.ImmGen
+# Loading RISCV_Of_SingleCycleMachine.InstructionMemory_sv_unit
+# Loading RISCV_Of_SingleCycleMachine.InstructionMemory
+# Loading RISCV_Of_SingleCycleMachine.Control_sv_unit
+# Loading RISCV_Of_SingleCycleMachine.Control
+# Loading RISCV_Of_SingleCycleMachine.Registers_sv_unit
+# Loading RISCV_Of_SingleCycleMachine.Registers
+# Loading RISCV_Of_SingleCycleMachine.ALUControl_sv_unit
+# Loading RISCV_Of_SingleCycleMachine.ALUControl
+# Loading RISCV_Of_SingleCycleMachine.ALU_sv_unit
+# Loading RISCV_Of_SingleCycleMachine.ALU
+# Loading RISCV_Of_SingleCycleMachine.DataMemory_sv_unit
+# Loading RISCV_Of_SingleCycleMachine.DataMemory
+# run -all
+# === Start Of Simulation. ===
+# ======================================================
+# Time:                   0ps : SYSTEM RESET.
+# Time:                  10ps : SYSTEM RESET COMPLETE.
+# ======================================================
+# ==========================================================================
+# Time:10ps CLK:0 PC: 0 Instruction:00000000111100000000000110010011
+# === Control Sigs==========================================================
+# ALUSrc, MemtoReg, RegWrite, MemRead, MemWrite, Branch, ALUOp1, ALUOp0
+# 1	  0	    1	      0	       0	 0	 1	 1	
+# === Register Sig s========================================================
+# rs1: 0 rs2:15 rd: 3
+# === ALU Sig s=============================================================
+# Operation : ADDI A: 0 B:15 ALUout: 15 ZeroFlg:0
+# === DMEM Sigs ============================================================
+# Address:15 Writedata: 0 Readdata: 0 
+# ==========================================================================
+# 
+# ==========================================================================
+# Time:20ps CLK:1 PC: 1 Instruction:00000000001100000000000100010011
+# === Control Sigs==========================================================
+# ALUSrc, MemtoReg, RegWrite, MemRead, MemWrite, Branch, ALUOp1, ALUOp0
+# 1	  0	    1	      0	       0	 0	 1	 1	
+# === Register Sig s========================================================
+# rs1: 0 rs2: 3 rd: 2
+# === ALU Sig s=============================================================
+# Operation : ADDI A: 0 B: 3 ALUout:  3 ZeroFlg:0
+# === DMEM Sigs ============================================================
+# Address: 3 Writedata:15 Readdata: 0 
+# ==========================================================================
+# 
+# ==========================================================================
+# Time:30ps CLK:1 PC: 2 Instruction:01000000001000011000001000110011
+# === Control Sigs==========================================================
+# ALUSrc, MemtoReg, RegWrite, MemRead, MemWrite, Branch, ALUOp1, ALUOp0
+# 0	  0	    1	      0	       0	 0	 1	 0	
+# === Register Sig s========================================================
+# rs1: 3 rs2: 2 rd: 4
+# === ALU Sig s=============================================================
+# Operation : SUB A:15 B: 3 ALUout: 12 ZeroFlg:0
+# === DMEM Sigs ============================================================
+# Address:12 Writedata: 3 Readdata: 0 
+# ==========================================================================
+# 
+# ==========================================================================
+# Time:40ps CLK:1 PC: 3 Instruction:00000000001100100000001010110011
+# === Control Sigs==========================================================
+# ALUSrc, MemtoReg, RegWrite, MemRead, MemWrite, Branch, ALUOp1, ALUOp0
+# 0	  0	    1	      0	       0	 0	 1	 0	
+# === Register Sig s========================================================
+# rs1: 4 rs2: 3 rd: 5
+# === ALU Sig s=============================================================
+# Operation : ADD A:12 B:15 ALUout: 27 ZeroFlg:0
+# === DMEM Sigs ============================================================
+# Address:27 Writedata:15 Readdata: 0 
+# ==========================================================================
+# 
+# ==========================================================================
+# Time:50ps CLK:1 PC: 4 Instruction:00000000010100000010000010100011
+# === Control Sigs==========================================================
+# ALUSrc, MemtoReg, RegWrite, MemRead, MemWrite, Branch, ALUOp1, ALUOp0
+# 1	  x	    0	      0	       1	 0	 0	 0	
+# === Register Sig s========================================================
+# rs1: 0 rs2: 5 rd: 1
+# === ALU Sig s=============================================================
+# Operation : SW A: 0 B: 1 ALUout:  1 ZeroFlg:0
+# === DMEM Sigs ============================================================
+# Address: 1 Writedata:27 Readdata: 0 
+# ==========================================================================
+# 
+# ==========================================================================
+# Time:60ps CLK:1 PC: 5 Instruction:00000000000100000010001100000011
+# === Control Sigs==========================================================
+# ALUSrc, MemtoReg, RegWrite, MemRead, MemWrite, Branch, ALUOp1, ALUOp0
+# 1	  1	    1	      1	       0	 0	 0	 0	
+# === Register Sig s========================================================
+# rs1: 0 rs2: 1 rd: 6
+# === ALU Sig s=============================================================
+# Operation : LW A: 0 B: 1 ALUout:  1 ZeroFlg:0
+# === DMEM Sigs ============================================================
+# Address: 1 Writedata: 0 Readdata:27 
+# ==========================================================================
+# 
+# ==========================================================================
+# Time:70ps CLK:1 PC: 6 Instruction:00000000011000010000010000110011
+# === Control Sigs==========================================================
+# ALUSrc, MemtoReg, RegWrite, MemRead, MemWrite, Branch, ALUOp1, ALUOp0
+# 0	  0	    1	      0	       0	 0	 1	 0	
+# === Register Sig s========================================================
+# rs1: 2 rs2: 6 rd: 8
+# === ALU Sig s=============================================================
+# Operation : ADD A: 3 B:27 ALUout: 30 ZeroFlg:0
+# === DMEM Sigs ============================================================
+# Address:30 Writedata:27 Readdata: 0 
+# ==========================================================================
+# 
+# ==========================================================================
+# Time:80ps CLK:1 PC: 7 Instruction:00000000001000011100001001100011
+# === Control Sigs==========================================================
+# ALUSrc, MemtoReg, RegWrite, MemRead, MemWrite, Branch, ALUOp1, ALUOp0
+# 0	  x	    0	      0	       0	 1	 0	 1	
+# === Register Sig s========================================================
+# rs1: 3 rs2: 2 rd: 4
+# === ALU Sig s=============================================================
+# Operation : BLT A:15 B: 3 ALUout:  1 ZeroFlg:0
+# === DMEM Sigs ============================================================
+# Address: 1 Writedata: 3 Readdata:27 
+# ==========================================================================
+# 
+# ==========================================================================
+# Time:90ps CLK:1 PC: 8 Instruction:00000000001100010101001001100011
+# === Control Sigs==========================================================
+# ALUSrc, MemtoReg, RegWrite, MemRead, MemWrite, Branch, ALUOp1, ALUOp0
+# 0	  x	    0	      0	       0	 1	 0	 1	
+# === Register Sig s========================================================
+# rs1: 2 rs2: 3 rd: 4
+# === ALU Sig s=============================================================
+# Operation : BGE A: 3 B:15 ALUout:  1 ZeroFlg:0
+# === DMEM Sigs ============================================================
+# Address: 1 Writedata:15 Readdata:27 
+# ==========================================================================
+# 
+# ==========================================================================
+# Time:100ps CLK:1 PC: 9 Instruction:00000000000000000000000000000000
+# === Control Sigs==========================================================
+# ALUSrc, MemtoReg, RegWrite, MemRead, MemWrite, Branch, ALUOp1, ALUOp0
+# 0	  0	    0	      0	       0	 0	 0	 0	
+# === Register Sig s========================================================
+# rs1: 0 rs2: 0 rd: 0
+# === ALU Sig s=============================================================
+# Operation : Unknow. A: 0 B: 0 ALUout:  0 ZeroFlg:1
+# === DMEM Sigs ============================================================
+# Address: 0 Writedata: 0 Readdata: 0 
+# ==========================================================================
+# 
+# ==========================================================================
+# Time:110ps CLK:1 PC:10 Instruction:00000000000000000000000000000000
+# === Control Sigs==========================================================
+# ALUSrc, MemtoReg, RegWrite, MemRead, MemWrite, Branch, ALUOp1, ALUOp0
+# 0	  0	    0	      0	       0	 0	 0	 0	
+# === Register Sig s========================================================
+# rs1: 0 rs2: 0 rd: 0
+# === ALU Sig s=============================================================
+# Operation : Unknow. A: 0 B: 0 ALUout:  0 ZeroFlg:1
+# === DMEM Sigs ============================================================
+# Address: 0 Writedata: 0 Readdata: 0 
+# ==========================================================================
+# 
+# ==========================================================================
+# Time:120ps CLK:1 PC:11 Instruction:00000000000000000000000000000000
+# === Control Sigs==========================================================
+# ALUSrc, MemtoReg, RegWrite, MemRead, MemWrite, Branch, ALUOp1, ALUOp0
+# 0	  0	    0	      0	       0	 0	 0	 0	
+# === Register Sig s========================================================
+# rs1: 0 rs2: 0 rd: 0
+# === ALU Sig s=============================================================
+# Operation : Unknow. A: 0 B: 0 ALUout:  0 ZeroFlg:1
+# === DMEM Sigs ============================================================
+# Address: 0 Writedata: 0 Readdata: 0 
+# ==========================================================================
+# 
+# ==========================================================================
+# Time:130ps CLK:1 PC:12 Instruction:00000000000000000000000000000000
+# === Control Sigs==========================================================
+# ALUSrc, MemtoReg, RegWrite, MemRead, MemWrite, Branch, ALUOp1, ALUOp0
+# 0	  0	    0	      0	       0	 0	 0	 0	
+# === Register Sig s========================================================
+# rs1: 0 rs2: 0 rd: 0
+# === ALU Sig s=============================================================
+# Operation : Unknow. A: 0 B: 0 ALUout:  0 ZeroFlg:1
+# === DMEM Sigs ============================================================
+# Address: 0 Writedata: 0 Readdata: 0 
+# ==========================================================================
+# 
+# ==========================================================================
+# Time:140ps CLK:1 PC:13 Instruction:00000000000000000000000000000000
+# === Control Sigs==========================================================
+# ALUSrc, MemtoReg, RegWrite, MemRead, MemWrite, Branch, ALUOp1, ALUOp0
+# 0	  0	    0	      0	       0	 0	 0	 0	
+# === Register Sig s========================================================
+# rs1: 0 rs2: 0 rd: 0
+# === ALU Sig s=============================================================
+# Operation : Unknow. A: 0 B: 0 ALUout:  0 ZeroFlg:1
+# === DMEM Sigs ============================================================
+# Address: 0 Writedata: 0 Readdata: 0 
+# ==========================================================================
+# 
+# ==========================================================================
+# Time:150ps CLK:1 PC:14 Instruction:00000000000000000000000000000000
+# === Control Sigs==========================================================
+# ALUSrc, MemtoReg, RegWrite, MemRead, MemWrite, Branch, ALUOp1, ALUOp0
+# 0	  0	    0	      0	       0	 0	 0	 0	
+# === Register Sig s========================================================
+# rs1: 0 rs2: 0 rd: 0
+# === ALU Sig s=============================================================
+# Operation : Unknow. A: 0 B: 0 ALUout:  0 ZeroFlg:1
+# === DMEM Sigs ============================================================
+# Address: 0 Writedata: 0 Readdata: 0 
+# ==========================================================================
+# 
+# ==========================================================================
+# Time:160ps CLK:1 PC:15 Instruction:00000000000000000000000000000000
+# === Control Sigs==========================================================
+# ALUSrc, MemtoReg, RegWrite, MemRead, MemWrite, Branch, ALUOp1, ALUOp0
+# 0	  0	    0	      0	       0	 0	 0	 0	
+# === Register Sig s========================================================
+# rs1: 0 rs2: 0 rd: 0
+# === ALU Sig s=============================================================
+# Operation : Unknow. A: 0 B: 0 ALUout:  0 ZeroFlg:1
+# === DMEM Sigs ============================================================
+# Address: 0 Writedata: 0 Readdata: 0 
+# ==========================================================================
+# 
+# === End Of Simulation. ===
+# ** Note: $finish    : ./rtl/ScmOfRISCV_tb.sv(65)
+#    Time: 170 ps  Iteration: 0  Instance: /ScmOfRISCV_tb
+# End time: 15:30:21 on Jul 20,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
